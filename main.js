@@ -69,7 +69,8 @@ function loadMap() {
         createMarkers();
         centerMap();
         setInterval(async () => {
-            const camera_pos = await fetch(`${SERVER_ADDRESS}/info?game_id=${GAME_ID}`); // TODO: hardcoded local url for now, will update later
+	    if (!GAME_ID) return;
+            const camera_pos = await fetch(`${SERVER_ADDRESS}/info?game_id=${GAME_ID}`); 
             const data = await camera_pos.json();
             console.log("new camera pos: ");
             console.log(data.x, data.y);
