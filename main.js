@@ -18,7 +18,7 @@ for (const queryParamString of queryParamStrings) {
     }
 }
 
-let SERVER_ADDRESS = "http://127.0.0.1:5000";
+let SERVER_ADDRESS = "http://noita-map-2-fqhnc6b2h6h4a2g9.canadacentral-01.azurewebsites.net";
 
 
 // DOM elements
